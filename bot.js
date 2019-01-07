@@ -586,7 +586,7 @@ member.addRole(Julian[member.user.id].roles.shift());
 
 
 client.on("message", message => {
- if (message.content === "-help-m") {
+ if (message.content === "help") {
   const embed = new Discord.RichEmbed() 
       .setColor("#ffff00")
       .setThumbnail(message.author.avatarURL)
@@ -1553,7 +1553,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GREEN")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=493764393016754178&scope=bot&permissions=21469585838')
+     .setURL('https://discordapp.com/oauth2/authorize?client_id=493764393016754178&scope=bot&permissions=')
   .setDescription(`**
   New Server Add __Canon Bot__ ✅
   
@@ -1568,7 +1568,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=493764393016754178&scope=bot&permissions=21469585838')
+     .setURL('https://discordapp.com/oauth2/authorize?client_id=493764393016754178&scope=bot&permissions=')
   .setDescription(`**
   Server Kicked __Canon Bot__ :cry:
 __Server Name__: ${guild.name}
