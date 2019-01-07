@@ -1,17 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const moment = require("moment");
-const prefix = '$'
+const prefix = '-'
 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`By 𝒮ℋ𝒜𝒟𝒪𝒲| $help  `,"http://twitch.tv/S-F")
 });
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`-help-m | Moderation`,'https://www.twitch.tv/ImD3s_x');	
+client.user.setGame(`-help-m  `,'https://www.twitch.tv/ImD3s_x');	
 });  
 
 client.on ("guildMemberAdd", member => {
