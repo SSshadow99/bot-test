@@ -1,26 +1,10 @@
 const Discord = require('discord.js');
+const moment = require("moment");
+const fs = require("fs");
 const client = new Discord.Client();
-var prefix = "-" ; // البرفكس
-const fs = require('fs');
-const moment = require('moment');
-const jimp = require('jimp');
-const Canvas = require('canvas');
-
-
-
-
-client.on('ready',  () => {
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
-  console.log('                          Bot By : SHADOW');
-  console.log('                          Bot is Ready <3');  
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-  console.log('By : SHADOW ');
-  console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
-  console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
-  console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
-  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');  
-  console.log('is online')
-client.user.setStatus("dnd");
+ const prefix = "-";
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
 
